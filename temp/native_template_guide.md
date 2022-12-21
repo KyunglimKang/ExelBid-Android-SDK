@@ -1,9 +1,9 @@
 # 네이티브 템플릿 광고 적용 가이드
-#### 1. 광고 적용을 원하는 layout 위치에 제공받은 네이티브 템플릿 layout 을 세팅합니다. (exelbid_native_template_***.xml 파일 제공)
+### 1. 광고 적용을 원하는 layout 위치에 제공받은 네이티브 템플릿 layout 을 세팅합니다. 
      
    res/layout 디렉토리에 사용하고자 하는 네이티브 템플릿 layout 파일을 추가합니다.
    
-   제공하는 layout 파일은 다음 위치에서 다운 받을 수 있습니다.
+   제공하는 layout 파일은 다음 위치에서 다운 받을 수 있습니다. (exelbid_native_template_***.xml 파일 제공)
    
    layout 파일 위치:  [exelbid-sample/res/layout](https://github.com/KyunglimKang/ExelBid-Android-SDK/tree/master/exelbid-sample/res/layout)
     
@@ -26,7 +26,7 @@
    - ``exelbid_native_template_320_480__animated.xml`` : 320*480 사이즈. '기본 형태 + 말풍선 + 애니메이션' 네이티브 템플릿 레이아웃입니다.
    
 
-#### 2. 해당 layout 에 필요한 요소들을 세팅합니다. (drawable, font, style)
+### 2. 해당 layout 에 필요한 요소들을 세팅합니다. (drawable, font, style)
    - #### drawable 세팅
 
       res/drawable 디렉토리에 템플릿 사용에 필요한 drawable 파일을 추가합니다. 제공하는 drawable 파일은 다음 위치에서 다운 받을 수 있습니다.
@@ -60,7 +60,7 @@
             <item name="cornerSizeBottomRight">6dp</item>
         </style>
       ```
-#### 3. 사용할 네이티브 템플릿의 최상단 레이아웃 id 를 통해 뷰 객체를 가져옵니다.
+### 3. 사용할 네이티브 템플릿의 최상단 레이아웃 id 를 통해 뷰 객체를 가져옵니다.
 ```java
 // 예시1) 320_50_without_chatbox.xml
 mNativeRootLayout = view.findViewById(R.id.root_small_without_chatbox);
@@ -71,11 +71,11 @@ mNativeRootLayout = view.findViewById(R.id.root_medium_chatbox);
 // 예시3) 320_480_animated.xml
 mNativeRootLayout = view.findViewById(R.id.root_large_animated);
 ```
-#### 4. 네이티브 광고를 적용합니다.
+### 4. 네이티브 광고를 적용합니다.
    
    [엑셀비드 SDK 네이티브 광고 적용 가이드](https://github.com/onnuridmc/ExelBid-Android-SDK#%EB%84%A4%EC%9D%B4%ED%8B%B0%EB%B8%8C)와 아래 [예시 코드](#광고-적용-예시-코드)를 참고하여 광고를 적용합니다.
         
-   - 애니메이션 템플릿을 적용하는 경우, 다음 샘플 코드를 광고가 로딩된 시점(onLoaded)에 애니메이션을 적용합니다.
+   - 애니메이션 템플릿을 적용하는 경우, 다음 샘플 코드를 광고가 로딩된 시점(``onLoaded``)에 애니메이션을 적용합니다.
    
         ```java
         // cta 버튼 화살표 애니메이션
