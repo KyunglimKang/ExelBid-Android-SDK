@@ -1,8 +1,44 @@
 # 네이티브 템플릿 광고 적용 가이드
 #### 1. 광고 적용을 원하는 layout 위치에 제공받은 네이티브 템플릿 layout 을 세팅합니다. (exelbid_native_template_***.xml 파일 제공)
+     
+   res/layout 디렉토리에 사용하고자 하는 네이티브 템플릿 layout 파일을 추가합니다.
+   
+   제공하는 layout 파일은 다음 위치에서 다운 받을 수 있습니다.
+   
+   layout 파일 위치:  [exelbid-sample/res/layout](https://github.com/KyunglimKang/ExelBid-Android-SDK/tree/master/exelbid-sample/res/layout)
+    
+   - ``exelbid_native_template_320_50_without_chatbox.xml`` : 320*50 사이즈. '기본 형태' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_50__chatbox.xml`` : 320*50 사이즈. '기본 형태 + 말풍선' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_50__animated.xml`` : 320*50 사이즈. '기본 형태 + 말풍선 + 애니메이션' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_100_without_chatbox.xml`` : 320*100 사이즈. '기본 형태' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_100__chatbox.xml`` : 320*100 사이즈. '기본 형태 + 말풍선' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_100__animated.xml`` : 320*100 사이즈. '기본 형태 + 말풍선 + 애니메이션' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_480_without_chatbox.xml`` : 320*480 사이즈. '기본 형태' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_480__chatbox.xml`` : 320*480 사이즈. '기본 형태 + 말풍선' 네이티브 템플릿 레이아웃입니다.
+   
+   - ``exelbid_native_template_320_480__animated.xml`` : 320*480 사이즈. '기본 형태 + 말풍선 + 애니메이션' 네이티브 템플릿 레이아웃입니다.
+   
+
 #### 2. 해당 layout 에 필요한 요소들을 세팅합니다. (drawable, font, style)
    - #### drawable 세팅
+
+      res/drawable 디렉토리에 템플릿 사용에 필요한 drawable 파일을 추가합니다. 제공하는 drawable 파일은 다음 위치에서 다운 받을 수 있습니다.
+      
+      drawable 파일 위치 : [exelbid-sample/res/drawable-nativeTemplate](https://github.com/KyunglimKang/ExelBid-Android-SDK/tree/master/exelbid-sample/res/font)
+      
    - #### font 세팅
+
+      res/font 디렉토리에 템플릿 사용에 필요한 font 파일을 추가합니다. 제공하는 font 파일은 다음 위치에서 다운 받을 수 있습니다.
+      
+      font 파일 위치 : [exelbid-sample/res/font](https://github.com/KyunglimKang/ExelBid-Android-SDK/tree/master/exelbid-sample/res/font)
+      
    - #### style 세팅
       
       res/values/styles.xml 에 다음 샘플 코드를 추가합니다.
