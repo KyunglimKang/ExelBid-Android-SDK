@@ -1,6 +1,29 @@
 # 네이티브 템플릿 광고 적용 가이드
 #### 1. 광고 적용을 원하는 layout 위치에 제공받은 네이티브 템플릿 layout 을 세팅합니다. (exelbid_native_template_***.xml 파일 제공)
 #### 2. 해당 layout 에 필요한 요소들을 세팅합니다. (drawable, font, style)
+   - #### drawable 세팅
+   - #### font 세팅
+   - #### style 세팅
+      
+      res/values/styles.xml 에 다음 샘플 코드를 추가합니다.
+      
+      ```XML
+        <!--  Native Template ImageView Style  -->
+        <style name="roundedImageView" parent="">
+            <item name="cornerFamilyTopRight">rounded</item>
+            <item name="cornerSize">6dp</item>
+        </style>
+        <style name="leftRoundedImageView" parent="">
+            <item name="cornerFamilyTopRight">rounded</item>
+            <item name="cornerSizeTopLeft">6dp</item>
+            <item name="cornerSizeBottomLeft">6dp</item>
+        </style>
+        <style name="rightRoundedImageView" parent="">
+            <item name="cornerFamilyTopRight">rounded</item>
+            <item name="cornerSizeTopRight">6dp</item>
+            <item name="cornerSizeBottomRight">6dp</item>
+        </style>
+      ```
 #### 3. 사용할 네이티브 템플릿의 최상단 레이아웃 id 를 통해 뷰 객체를 가져옵니다.
 ```java
 // 예시1) 320_50_without_chatbox.xml
